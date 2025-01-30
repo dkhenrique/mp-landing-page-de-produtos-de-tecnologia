@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+:root {
+  --black-color: #000;
+  --white-color: #fff;
+  --gray-color: #9cA3AF;
+  --accent-color: #22c55e;
+  --linear-gradient: linear-gradient(-90deg, #1271EF, #E539a2)
+}
+
+a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+.btn {
+  background-color: var(--white-color);
+  color: var(--black-color) !important;
+  padding: 9px 1rem;
+  border-radius: .625rem;
+  font-size: 1rem;
+  width: 5.875rem;
+  font-weight: 400;
+}
+
+.btn-gradient {
+  background: var(--linear-gradient);
+  color: var(--white-color) !important;
+  border-radius: 1.0625rem;
+  padding: .4063rem 1.4375rem;
+  font-size: 1.25rem;
+}
+
+body {
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+
+header {
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 3.125rem;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.625rem;
+}
+
+.nav-left ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.625rem;
+}
+
+.nav-left ul li:first-child {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1.625rem;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 6.125rem;
+  padding-left: 3.25rem;
+  width: 100%;
+  height: calc(100vh - 91px);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: url('/assets/background-black2.png') no-repeat ;
+  z-index: 100;
+}
+
+.hero-left h2 {
+  font-size: 1.5625rem;
+  color: var(--gray-color);
+  font-weight: 300;
+  line-height: 4.5rem;
+  margin-bottom: 2.6875rem;
+}
+
+.hero-left h1 {
+  font-size: 3.75rem;
+  font-weight: 300;
+  line-height: 4.375rem;
+  margin-bottom: 3.25rem;
+}
+
+.hero-right {
+ 
+}
+
